@@ -63,11 +63,11 @@ def average_lines_intercept(image, lines):
     averaged_right_line = make_coordinates(image, right_lines_average)           
     return np.array([averaged_left_line, averaged_right_line])
 
-#image = cv2.imread(r"D:\selfDrivingCars\LearningPhase\data\test_image.jpg")
+#image = cv2.imread("data\test_image.jpg")
 #image_copy = np.copy(image)
 
 
-video = cv2.VideoCapture(r"D:\selfDrivingCars\LearningPhase\data\test2.mp4")
+video = cv2.VideoCapture("data\test2.mp4")
 
 while(video.isOpened()):
     success, image_copy = video.read()
